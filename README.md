@@ -1,5 +1,5 @@
 # 💫 About Me:
-estoy en estos momentos trabajando en mi proyecto individual (PI) soyHenry
+Web Development Full Stack soyHenry
 
 
 # 💻 Tech Stack:
