@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 en este momento me encuentro con las puertas abiertas a nuevas oportunidades<br><br>👯 busco colaborar con tecnologías como postgres, mongodb, node js, en fin con back end<br><br>🌱 siempre en constante aprendizaje<br><br>💬 me puedes encontrar en wathsapp +57 302 624 4068 o mi e-mail lrcorales@gmail.com<br><br>⚡ disfruta construyendo...
+🔭 en este momento me encuentro con las puertas abiertas a nuevas oportunidades<br><br>👯 busco colaborar con tecnologías como SQL, NoSQL, Java, C#, Python, Node js <br><br>🌱 siempre en constante aprendizaje<br><br>💬 me puedes encontrar en wathsapp +57 302 624 4068 o mi e-mail lrcorales@gmail.com<br><br>⚡ disfruta construyendo...
 
 
 ## 🌐 Socials:
