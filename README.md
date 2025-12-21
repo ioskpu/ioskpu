@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 en este momento me encuentro con las puertas abiertas a nuevas oportunidades<br><br>👯 busco colaborar con tecnologías como SQL, NoSQL, Java, C#, Python, Node js <br><br>🌱 siempre en constante aprendizaje<br><br>💬 me puedes encontrar en wathsapp +57 302 624 4068 o mi e-mail lrcorales@gmail.com<br><br>⚡ disfruta construyendo...
+🔭 Actualmente abierto a nuevas oportunidades y colaboraciones<br><br>👯 Interesado en trabajar con SQL, NoSQL, Java, C#, Python y Node.js <br><br>🌱 En aprendizaje constante, enfocado en construir soluciones prácticas y escalables<br><br>💬 Puedes contactarme por WhatsApp: +57 302 624 4068 o email: lrcorales@gmail.com<br><br>⚡ Disfruto convertir ideas en software funcional
 
 
 ## 🌐 Socials:
