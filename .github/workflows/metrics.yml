@@ -22,15 +22,12 @@ jobs:
           base: header, activity
           config_timezone: America/Bogota
 
-          # Lenguajes más usados en tus repositorios
+          # Lenguajes que más usas (analiza tus commits en tus repositorios)
           plugin_languages: yes
+          plugin_languages_indepth: yes
           plugin_languages_limit: 6
-
-          # Hábitos: a qué hora y qué días programas más
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: no
-          plugin_habits_days: 30
+          plugin_languages_ignored: html, css, scss, shell, dockerfile, makefile
+          plugin_languages_analysis_timeout: 30
 
           # El calendario de contribuciones ya lo muestra GitHub debajo del README,
           # por eso no se repite aquí.
