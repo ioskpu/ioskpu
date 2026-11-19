@@ -1,12 +1,12 @@
-# For a full list of options see:
-# https://github.com/lowlighter/metrics/blob/master/action.yml
+# Genera github-metrics.svg con lowlighter/metrics.
+# Opciones: https://github.com/lowlighter/metrics/blob/master/action.yml
 name: Metrics
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  # Todos los días a las 5:00 (Bogotá)
+  schedule: [{cron: "0 10 * * *"}]
+  # Manual: Actions → Metrics → Run workflow
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
+  # Al hacer push a main
   push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
@@ -17,17 +17,22 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-
-
-          # options
           template: classic
-          config_timezone: Europe/Berlin
-          plugin_traffic: yes
+          base: header, activity, community, repositories, metadata
+          config_timezone: America/Bogota
+
+          # Lenguajes más usados en tus repositorios
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_limit: 8
+          plugin_languages_threshold: 2%
+          plugin_languages_colors: github
+
+          # Calendario de contribuciones en 3D
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
-          plugin_stargazers: yes
-          plugin_reactions:  yes
-          plugin_reactions_limit: 500
-          plugin_reactions_limit_issues: 500
-          plugin_reactions_details: percentage
-          plugin_reactions_ignored: github-actions[bot]
+
+          # Quitados porque salían vacíos o con error:
+          #  - plugin_traffic: exige que METRICS_TOKEN tenga el permiso "repo"
+          #    (mostraba "Insufficient token scopes").
+          #  - plugin_stargazers y plugin_reactions: sin datos, solo gráficas en cero.
