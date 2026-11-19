@@ -18,21 +18,16 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           template: classic
-          base: header, activity, community, repositories, metadata
+          # Versión corta: quién eres y tu actividad (sin las secciones de ceros).
+          base: header, activity
           config_timezone: America/Bogota
 
-          # Lenguajes más usados en tus repositorios
+          # Lenguajes que más usas (analiza tus commits en tus repositorios)
           plugin_languages: yes
-          plugin_languages_sections: most-used
-          plugin_languages_limit: 8
-          plugin_languages_threshold: 2%
-          plugin_languages_colors: github
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 6
+          plugin_languages_ignored: html, css, scss, shell, dockerfile, makefile
+          plugin_languages_analysis_timeout: 30
 
-          # Calendario de contribuciones en 3D
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-
-          # Quitados porque salían vacíos o con error:
-          #  - plugin_traffic: exige que METRICS_TOKEN tenga el permiso "repo"
-          #    (mostraba "Insufficient token scopes").
-          #  - plugin_stargazers y plugin_reactions: sin datos, solo gráficas en cero.
+          # El calendario de contribuciones ya lo muestra GitHub debajo del README,
+          # por eso no se repite aquí.
